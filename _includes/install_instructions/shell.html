@@ -8,20 +8,17 @@
   <div>
     <ul class="nav nav-tabs" role="tablist">
       <li role="presentation" class="active"><a data-os="windows" href="#shell-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
-      <li role="presentation"><a data-os="macos" href="#shell-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
-      <li role="presentation"><a data-os="linux" href="#shell-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
     </ul>
 
     <div class="tab-content">
-      <article role="tabpanel" class="tab-pane active" id="shell-windows">
+       <article role="tabpanel" class="tab-pane active" id="shell-windows">
         <ol>
           <li>Download the Git for Windows <a href="https://gitforwindows.org/">installer</a>.</li>
-          <li>Run the installer and follow the steps below:
+          <li>Run the installer and follow the steps below. You should be able to do it as a local user without any admin credentials.
             <ol>
               {% comment %} Git 2.29.1 Setup {% endcomment %}
               <li>
-                Click on "Next" four times (two times if you've previously
-                installed Git).  You don't need to change anything
+                Click on "Next" four times (two times if you've previously installed Git).  You don't need to change anything
                 in the Information, location, components, and start menu screens.
               </li>
               <li>
@@ -62,7 +59,7 @@
               {% comment %} Configuring the terminal emulator to use with Git Bash {% endcomment %}
               <li>
                 <strong>
-                  Ensure that "Use Windows' default console window" is selected and click on "Next".
+                  Ensure that "MinTTY" is selected and click on "Next".
                 </strong>
               </li>
               {% comment %} Configuring extra options {% endcomment %}
@@ -103,45 +100,6 @@
         <iframe type="text/html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube-nocookie.com/embed/339AEqk9c-8?modestbranding=1&playsinline=1&iv_load_policy=3&rel=0" class="yt-frame" allowfullscreen></iframe>
         </div>
         </div>
-      </article>
-      <article role="tabpanel" class="tab-pane" id="shell-macos">
-        <p>
-          The default shell in some versions of macOS is Bash, and
-	  Bash is available in all versions, so no need to install anything.
-	  You access Bash from the Terminal (found in
-	  <code>/Applications/Utilities</code>).
-          See the Git installation <a href="#shell-macos-video-tutorial">video tutorial</a>
-          for an example on how to open the Terminal.
-          You may want to keep Terminal in your dock for this workshop.
-        </p>
-        <p>
-            To see if your default shell is Bash type <code>echo $SHELL</code>
-            in Terminal and press the <kbd>Return</kbd> key. If the message
-            printed does not end with '/bash' then your default is something
-            else and you can run Bash by typing <code>bash</code>
-        </p>
-        <p>
-          If you want to change your default shell, see <a href="https://support.apple.com/en-au/HT208050" rel="noopener">
-          this Apple Support article</a> and follow the instructions on "How to change your default shell".
-        </p>
-        <h4 id="shell-macos-video-tutorial">Video Tutorial</h4>
-        <div class="yt-wrapper2">
-        <div class="yt-wrapper">
-        <iframe type="text/html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube-nocookie.com/embed/9LQhwETCdwY?modestbranding=1&playsinline=1&iv_load_policy=3&rel=0" class="yt-frame" allowfullscreen></iframe>
-        </div>
-        </div>
-      </article>
-      <article role="tabpanel" class="tab-pane" id="shell-linux">
-        <p>
-          The default shell is usually Bash and there is usually no need to
-          install anything.
-        </p>
-        <p>
-          To see if your default shell is Bash type <code>echo $SHELL</code> in
-          a terminal and press the <kbd>Enter</kbd> key. If the message printed
-          does not end with '/bash' then your default is something else and you
-          can run Bash by typing <code>bash</code>.
-        </p>
       </article>
     </div>
   </div>
